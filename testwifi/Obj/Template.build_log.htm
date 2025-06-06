@@ -1,0 +1,158 @@
+<html>
+<body>
+<pre>
+<h1>�Vision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.42.0.0
+Copyright (C) 2025 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: xu ziqi, WHU, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.42.0.0
+Toolchain Path:  D:\Local\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.42.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      CMSIS_AGDI.dll V1.33.22.0
+Dialog DLL:      TCM.DLL V1.56.6.0
+ 
+<h2>Project:</h2>
+D:\testwifi\testwifi\Template.uvprojx
+Project File Date:  06/05/2025
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\Local\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'Target 1'
+assembling startup_stm32f10x_hd.s...
+compiling stm32f10x_wwdg.c...
+compiling stm32f10x_dac.c...
+compiling misc.c...
+compiling stm32f10x_adc.c...
+compiling main.c...
+User\main.c(59): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *"
+      if (ESP8266_MQTT_Public_key_Value(topic_id, "temperature", temp_buf)) {
+User\main.c(65): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *"
+      if (ESP8266_MQTT_Public_key_Value(topic_id, "humidity", humi_buf)) {
+User\main.c(190): warning:  #223-D: function "TIM3_CH2_PWM_Init" declared implicitly
+      TIM3_CH2_PWM_Init(500,72-1); //Ƶ����2Kh
+User\main.c(223): warning:  #111-D: statement is unreachable
+      printf("\n");
+User\main.c(259): warning:  #1-D: last line of file ends without a newline
+  // ������������������
+User\main.c: 5 warnings, 0 errors
+compiling stm32f10x_bkp.c...
+compiling stm32f10x_pwr.c...
+compiling stm32f10x_it.c...
+compiling stm32f10x_exti.c...
+compiling stm32f10x_iwdg.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_rtc.c...
+compiling core_cm3.c...
+compiling stm32f10x_fsmc.c...
+compiling system_stm32f10x.c...
+compiling stm32f10x_spi.c...
+compiling SysTick.c...
+compiling led.c...
+compiling stm32f10x_can.c...
+compiling system.c...
+compiling pwm.c...
+compiling dht11.c...
+compiling usart.c...
+Public\usart.c(171): warning:  #1-D: last line of file ends without a newline
+  }
+Public\usart.c: 1 warning, 0 errors
+compiling tftlcd.c...
+APP\tftlcd\tftlcd.c(1116): warning:  #177-D: variable "g"  was declared but never referenced
+   	u16 r=0,g=0,b=0;
+APP\tftlcd\tftlcd.c(1116): warning:  #177-D: variable "b"  was declared but never referenced
+   	u16 r=0,g=0,b=0;
+APP\tftlcd\tftlcd.c(1117): warning:  #177-D: variable "r1"  was declared but never referenced
+  	u16 r1,r2,r3;
+APP\tftlcd\tftlcd.c(1117): warning:  #177-D: variable "r2"  was declared but never referenced
+  	u16 r1,r2,r3;
+APP\tftlcd\tftlcd.c(1117): warning:  #177-D: variable "r3"  was declared but never referenced
+  	u16 r1,r2,r3;
+APP\tftlcd\tftlcd.c(1118): warning:  #177-D: variable "value"  was declared but never referenced
+  	u32 value;
+APP\tftlcd\tftlcd.c(4238): warning:  #550-D: variable "num"  was set but never used
+  	long tmp=0,num=0;
+APP\tftlcd\tftlcd.c: 7 warnings, 0 errors
+compiling cJSON.c...
+Libraries\cJSON\cJSON.c(55): warning:  #1293-D: assignment in condition
+        if (!(copy = (char*)cJSON_malloc(len))) return 0;
+Libraries\cJSON\cJSON.c(278): warning:  #1293-D: assignment in condition
+  	ptr=str;while ((token=*ptr) && ++len) {if (strchr("\"\\\b\f\n\r\t",token)) len++; else if (token<32) len+=5;ptr++;}
+Libraries\cJSON\cJSON.c(352): warning:  #111-D: statement is unreachable
+  	return p.buffer;
+Libraries\cJSON\cJSON.c(423): warning:  #1293-D: assignment in condition
+  		if (!(new_item=cJSON_New_Item())) return 0; 	/* memory fail */
+Libraries\cJSON\cJSON.c(535): warning:  #1293-D: assignment in condition
+  		if (!(new_item=cJSON_New_Item()))	return 0; /* memory fail */
+Libraries\cJSON\cJSON.c: 5 warnings, 0 errors
+compiling wifi_config.c...
+compiling wifi_function.c...
+APP\esp8266\wifi_function.c(325): warning:  #177-D: variable "cStr"  was declared but never referenced
+  	char cStr [100] = { 0 }, cCmd [120];
+APP\esp8266\wifi_function.c(342): warning:  #177-D: variable "cStr"  was declared but never referenced
+  	char cStr [100] = { 0 }, cCmd [120];
+APP\esp8266\wifi_function.c(364): warning:  #177-D: variable "cStr"  was declared but never referenced
+  	char cStr [100] = { 0 }, cCmd [120];
+APP\esp8266\wifi_function.c(374): warning:  #177-D: variable "cStr"  was declared but never referenced
+  	char cStr [100] = { 0 }, cCmd [120];
+APP\esp8266\wifi_function.c(385): warning:  #177-D: variable "cStr"  was declared but never referenced
+  	char cStr [100] = { 0 }, cCmd [120];
+APP\esp8266\wifi_function.c(672): warning:  #188-D: enumerated type mixed with another type
+          server_connected = ESP8266_Link_Server((uint8_t)enumTCP, (char*)server_ip, (char*)server_port, 9); // ����Single_ID=0
+APP\esp8266\wifi_function.c(672): warning:  #188-D: enumerated type mixed with another type
+          server_connected = ESP8266_Link_Server((uint8_t)enumTCP, (char*)server_ip, (char*)server_port, 9); // ����Single_ID=0
+APP\esp8266\wifi_function.c(684): warning:  #188-D: enumerated type mixed with another type
+      if (ESP8266_SendString(DISABLE, (char*)test_data, data_len, 0)) { // ����Single_ID=0
+APP\esp8266\wifi_function.c(781): warning:  #188-D: enumerated type mixed with another type
+  		server_connected = ESP8266_Link_MQTT((char*)server_ip, (char*)server_port, 9); // ����Single_ID=0
+APP\esp8266\wifi_function.c(724): warning:  #177-D: variable "setPublic_retry"  was declared but never referenced
+  	u8 setPublic_retry = 0;   // ����������������������
+APP\esp8266\wifi_function.c(725): warning:  #177-D: variable "setPublic_mqtt"  was declared but never referenced
+  	bool setPublic_mqtt = false;  // ������������������״̬
+APP\esp8266\wifi_function.c(727): warning:  #177-D: variable "sub_retry"  was declared but never referenced
+  	u8 sub_retry = 0;   // ������������������
+APP\esp8266\wifi_function.c(728): warning:  #177-D: variable "sub_mqtt"  was declared but never referenced
+  	bool sub_mqtt = false;  // ��������������״̬
+APP\esp8266\wifi_function.c(730): warning:  #177-D: variable "topic_id"  was declared but never referenced
+  	const char* topic_id = "topic911"; // ��������������IDΪtopic911 
+APP\esp8266\wifi_function.c(732): warning:  #177-D: variable "qos"  was declared but never referenced
+  	char qos[] = "0"; // ��������������������
+APP\esp8266\wifi_function.c(737): warning:  #177-D: variable "test_data"  was declared but never referenced
+      const char* test_data;
+APP\esp8266\wifi_function.c(738): warning:  #177-D: variable "data_len"  was declared but never referenced
+      u32 data_len;
+APP\esp8266\wifi_function.c(841): warning:  #177-D: variable "cStr"  was declared but never referenced
+  	char cStr [100] = { 0 }, cCmd [120];
+APP\esp8266\wifi_function.c: 18 warnings, 0 errors
+linking...
+Program Size: Code=18446 RO-data=566 RW-data=136 ZI-data=3792  
+FromELF: creating hex file...
+".\Obj\Template.axf" - 0 Error(s), 36 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.1.0.5.pack
+                Keil::STM32F1xx_DFP@1.0.5
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  D:/Local/Arm/Packs/Keil/STM32F1xx_DFP/1.0.5/Device/Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:03
+</pre>
+</body>
+</html>
